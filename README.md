@@ -1,6 +1,6 @@
 # Excalidraw Decrypt
 
-CLI tool and library that allows to fetch Excalidraw digrams as Plain text, which can be used for storage and combined with other tools to render the diagrams.
+CLI tool and library that allows fetching Excalidraw diagrams as Plain text, which can be used for storage and combined with other tools to render the diagrams.
 
 # Background
 The library relies on the parameters obtained from Excalidraw shareable links, which have the following format
