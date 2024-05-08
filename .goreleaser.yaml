@@ -29,7 +29,7 @@ brews:
       name: loveholidays
       email: oss@loveholidays.com
     folder: Formula
-    homepage: "https://github.com/loveholidays/excalidrawdecrypt"
+    homepage: "https://github.com/loveholidays/excalidraw-decrypt"
     description: "Library and CLI to decrypt excalidraw diagrams from shareable links"
     install: |
       bin.install "excalidraw-decrypt"
