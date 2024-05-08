@@ -25,4 +25,4 @@ The downloaded diagram is decrypted using the decryptionKey from the shareable l
 The diagram in this shareable link paints the picture of the steps required to get the Excalidraw file in plaintext:
 https://excalidraw.com/#json=pJK6JcJMr7LGOuy1NbCKP,YneEARvxllEU6vlDQfz81A
 
-[Decryption Process](decryption_process.png)
+![Decryption Process](decryption_process.png "Decryption Process")
