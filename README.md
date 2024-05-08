@@ -1,11 +1,11 @@
 # Excalidraw Decrypt
 
-CLI tool and library allows to fetch Excalidraw digrams in Plain text, which can be used for storage and combined with other tools to render the diagrams.
+CLI tool and library that allows to fetch Excalidraw digrams as Plain text, which can be used for storage and combined with other tools to render the diagrams.
 
 # Background
-The library relies on the parameters obtained on Excalidraw shareable links, which have the following format
+The library relies on the parameters obtained from Excalidraw shareable links, which have the following format
 
-https://excalidraw.com/#json=documentID,decryptionKey
+`https://excalidraw.com/#json=documentID,decryptionKey`
 
 # Install
 
@@ -25,7 +25,7 @@ go get github.com/loveholidays/excalidrawdecrypt
 brew install loveholidays/tap/excalidrawdecrypt
 ```
 ## Linux
-Grab the latest OS/Arch compatible binary from our [Releases](https://github.com/loveholidays/excalidrawdecrypt/releases) page.
+Grab the latest OS/Arch compatible binary from our [Releases](https://github.com/loveholidays/excalidraw-decrypt/releases) page.
 
 # Usage
 
