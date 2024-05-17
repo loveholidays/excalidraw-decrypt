@@ -27,7 +27,7 @@ import (
 
 func Decrypt(buffer, iv []byte, keyString string) ([]byte, error) {
 
-	rawKey, err := base64.RawStdEncoding.DecodeString(keyString)
+	rawKey, err := base64.RawURLEncoding.DecodeString(keyString)
 
 	if err != nil {
 		return nil, err
