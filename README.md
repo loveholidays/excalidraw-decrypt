@@ -52,6 +52,10 @@ You can import back the fetched plaintext diagram to excalidraw to continue edit
 
 To continue editing the original document, simply visit the Excalidraw shareable link on a browser
 
+# Building
+
+Requires go 1.22.2. Running `make build` will create an `excalidraw-decrypt` binary in the `bin` directory.
+
 # Decryption process
 Using a public Excalidraw API to download the ciphered diagram:
 
