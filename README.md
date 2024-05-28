@@ -1,6 +1,6 @@
 # Excalidraw Decrypt
 
-CLI tool and library that allows fetching Excalidraw diagrams as Plain text, which can be used for storage and combined with other tools to render the diagrams.
+CLI tool and library that allows fetching Excalidraw diagrams as Plain text from the Excalidraw public API, which can be used for storage and combined with other tools to render the diagrams.
 
 # Background
 The library relies on the parameters obtained from Excalidraw shareable links, which have the following format
@@ -9,44 +9,52 @@ The library relies on the parameters obtained from Excalidraw shareable links, w
 
 # Install
 
+## Install using go toolchain
+
 ```
-# go >= 1.17
-# Using `go get` to install binaries is deprecated.
-# The version suffix is mandatory.
 go install github.com/loveholidays/excalidrawdecrypt@latest
-
-# go < 1.17
-go get github.com/loveholidays/excalidrawdecrypt
 ```
 
-## Homebrew
+## Install using homebrew
 
 ```
 brew install loveholidays/tap/excalidrawdecrypt
 ```
-## Linux
+## Install by downloading the binary from Github releases
 Grab the latest OS/Arch compatible binary from our [Releases](https://github.com/loveholidays/excalidraw-decrypt/releases) page.
 
 # Usage
 
-## CLI
+## Use as a CLI tool
+
+Given an Excalidraw shareable link, for example `https://excalidraw.com/#json=pJK6JcJMr7LGOuy1NbCKP,YneEARvxllEU6vlDQfz81A` you just need to run the tool in the command line, passing as an argument from the URL after `#json=`.
 
 ```
-excalidraw-decrypt documentID,decryptionKey
+excalidraw-decrypt pJK6JcJMr7LGOuy1NbCKP,YneEARvxllEU6vlDQfz81A > my_diagram.excalidraw
 ```
 
-For example
+## Use as a library
 
-```
-excalidraw-decrypt pJK6JcJMr7LGOuy1NbCKP,YneEARvxllEU6vlDQfz81
-```
-
-## As a library
+Simply create a decrypter client and pass the same argument as a single string. Find an [example on this codebase](https://github.com/loveholidays/excalidraw-decrypt/blob/main/pkg/excalidrawdecrypt/excalidraw-decrypt/excalidrawdecrypt.go#L35-L38).
 
 ```
 decrypter := excalidrawdecrypt.CreateShareableExcalidrawDecrypter()
-decrypt, err := decrypter.Decrypt("pJK6JcJMr7LGOuy1NbCKP,YneEARvxllEU6vlDQfz81A")
+plaintext, err := decrypter.Decrypt("pJK6JcJMr7LGOuy1NbCKP,YneEARvxllEU6vlDQfz81A")
 ```
+
+# Integration with Excalidraw
+
+## What if I want to import the plaintext in a new Excalidraw canvas?
+
+You can import back the fetched plaintext diagram to excalidraw to continue editing, opening the file in Excalidraw  ![Excalidraw Open](excalidraw_open.png "Excalidraw open file")
+
+## What if I want to continue editing the original document?
+
+To continue editing the original document, simply visit the Excalidraw shareable link in a browser
+
+# Building
+
+Requires go 1.22.2. Running `make build` will create an `excalidraw-decrypt` binary in the `bin` directory.
 
 # Decryption process
 Using a public Excalidraw API to download the ciphered diagram:
