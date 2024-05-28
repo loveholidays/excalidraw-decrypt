@@ -50,7 +50,7 @@ You can import back the fetched plaintext diagram to excalidraw to continue edit
 
 ## What if I want to continue editing the original document?
 
-To continue editing the original document, simply visit the Excalidraw shareable link on a browser
+To continue editing the original document, simply visit the Excalidraw shareable link in a browser
 
 # Building
 
