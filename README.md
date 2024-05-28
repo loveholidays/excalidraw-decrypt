@@ -27,7 +27,7 @@ Grab the latest OS/Arch compatible binary from our [Releases](https://github.com
 
 ## Use as a CLI tool
 
-Given an Excalidraw shareable link, for example `https://excalidraw.com/#json=pJK6JcJMr7LGOuy1NbCKP,YneEARvxllEU6vlDQfz81A` just need to run the tool in the command line, passing as an argument what's in the URL after `#json=`.
+Given an Excalidraw shareable link, for example `https://excalidraw.com/#json=pJK6JcJMr7LGOuy1NbCKP,YneEARvxllEU6vlDQfz81A` you just need to run the tool in the command line, passing as an argument from the URL after `#json=`.
 
 ```
 excalidraw-decrypt pJK6JcJMr7LGOuy1NbCKP,YneEARvxllEU6vlDQfz81A > my_diagram.excalidraw
