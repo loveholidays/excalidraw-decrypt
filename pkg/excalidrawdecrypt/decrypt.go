@@ -60,7 +60,7 @@ func (decrypter *ShareableExcalidrawDecrypter) Decrypt(shareableID string) (stri
 		return "", err
 	}
 
-	// currently unused
+	// We don't use the metadata from the buffers
 	// encodingMetadataBuffer := splitBuffers[0]
 	iv := splitBuffers[1]
 	buffer := splitBuffers[2]
@@ -82,8 +82,12 @@ func (decrypter *ShareableExcalidrawDecrypter) Decrypt(shareableID string) (stri
 		return "", err
 	}
 
-	// There seem to be 16 bytes of garbage at the beginning
-	stripped := unzipped[16:]
+	nestedBuffers, err := buffers.SplitBuffers(unzipped)
 
-	return string(stripped), nil
+	if err != nil {
+		return "", err
+	}
+
+	// again, we don't use the metadata from the nested buffers
+	return string(nestedBuffers[1]), nil
 }
