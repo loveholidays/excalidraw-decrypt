@@ -12,13 +12,13 @@ The library relies on the parameters obtained from Excalidraw shareable links, w
 ## Install using go toolchain
 
 ```
-go install github.com/loveholidays/excalidraw-decrypt@latest
+go install github.com/loveholidays/excalidraw-decrypt/cmd/excalidraw-decrypt@latest
 ```
 
 ## Install using homebrew
 
 ```
-brew install loveholidays/tap/excalidrawdecrypt
+brew install loveholidays/tap/excalidraw-decrypt
 ```
 ## Install by downloading the binary from Github releases
 Grab the latest OS/Arch compatible binary from our [Releases](https://github.com/loveholidays/excalidraw-decrypt/releases) page.
