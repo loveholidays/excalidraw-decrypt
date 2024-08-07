@@ -21,7 +21,7 @@ changelog:
       - '^docs:'
       - '^test:'
 brews:
-  - name: excalidrawdecrypt
+  - name: excalidraw-decrypt
     tap:
       owner: loveholidays
       name: homebrew-tap
