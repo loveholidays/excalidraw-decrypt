@@ -20,7 +20,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 package buffers_test
 
 import (
-	"excalidraw-decrypt/pkg/excalidrawdecrypt/buffers"
+	"github.com/loveholidays/excalidraw-decrypt/pkg/excalidrawdecrypt/buffers"
 	"testing"
 
 	. "github.com/onsi/ginkgo/v2"

@@ -12,7 +12,7 @@ The library relies on the parameters obtained from Excalidraw shareable links, w
 ## Install using go toolchain
 
 ```
-go install github.com/loveholidays/excalidrawdecrypt@latest
+go install github.com/loveholidays/excalidraw-decrypt@latest
 ```
 
 ## Install using homebrew
