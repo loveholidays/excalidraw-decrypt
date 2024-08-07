@@ -22,9 +22,9 @@ package excalidrawdecrypt
 import (
 	"bytes"
 	"compress/zlib"
-	"excalidraw-decrypt/pkg/excalidrawdecrypt/buffers"
-	"excalidraw-decrypt/pkg/excalidrawdecrypt/crypto"
-	"excalidraw-decrypt/pkg/excalidrawdecrypt/fetch"
+	"github.com/loveholidays/excalidraw-decrypt/pkg/excalidrawdecrypt/buffers"
+	"github.com/loveholidays/excalidraw-decrypt/pkg/excalidrawdecrypt/crypto"
+	"github.com/loveholidays/excalidraw-decrypt/pkg/excalidrawdecrypt/fetch"
 	"io"
 	"strings"
 )

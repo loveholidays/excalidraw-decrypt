@@ -21,8 +21,8 @@ package excalidrawdecrypt_test
 
 import (
 	_ "embed"
-	"excalidraw-decrypt/pkg/excalidrawdecrypt"
-	mock_fetch "excalidraw-decrypt/pkg/excalidrawdecrypt/mocks/fetch"
+	"github.com/loveholidays/excalidraw-decrypt/pkg/excalidrawdecrypt"
+	mock_fetch "github.com/loveholidays/excalidraw-decrypt/pkg/excalidrawdecrypt/mocks/fetch"
 	"go.uber.org/mock/gomock"
 	"testing"
 

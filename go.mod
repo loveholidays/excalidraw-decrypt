@@ -1,4 +1,4 @@
-module excalidraw-decrypt
+module github.com/loveholidays/excalidraw-decrypt
 
 go 1.22.2
 
