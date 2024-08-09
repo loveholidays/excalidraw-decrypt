@@ -8,7 +8,7 @@ before:
     - go mod tidy
 builds:
   - main: ./cmd/excalidraw-decrypt/
-  - env:
+    env:
       - CGO_ENABLED=0
     goos:
       - linux
