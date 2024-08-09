@@ -1,3 +1,5 @@
+version: 2
+
 release:
   mode: replace
 
@@ -22,13 +24,13 @@ changelog:
       - '^test:'
 brews:
   - name: excalidraw-decrypt
-    tap:
+    repository:
       owner: loveholidays
       name: homebrew-tap
     commit_author:
       name: loveholidays
       email: oss@loveholidays.com
-    folder: Formula
+    directory: Formula
     homepage: "https://github.com/loveholidays/excalidraw-decrypt"
     description: "Library and CLI to decrypt excalidraw diagrams from shareable links"
     install: |
